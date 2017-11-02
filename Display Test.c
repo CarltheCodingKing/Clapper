@@ -8,44 +8,26 @@ task main()
 
 	while(true)
 	{
-		if(SensorValue(sound) >= 90)
+		if(SensorValue(sound) >= 80)
 		{
 			clapcount= clapcount + 1;
 			displayTextLine(4,"clapcount: %d", clapcount);
-			wait10Msec(100);
+			wait10Msec(30);
 
-			if(clapcount == 1)
+			// || means "or"
+			// 156 wait is 2 rotations
+			// 75 works for one rotation
+			// 41.5 for half rotation
+			if(clapcount == 2 || clapcount == 4 || clapcount == 4 || clapcount == 6 || clapcount == 8 || clapcount == 10 )
 			{
 				motor[flipper] = -50;
-				wait10Msec(20);
+				wait10Msec(41.4);
 				motor[flipper]= 0;
 
-				if(clapcount == 2);
-				{
-					motor[flipper] = 50;
-					wait10Msec(20);
-					motor[flipper]= 0;
+			if(clapcount == 10)
+				clapcount= 0;
 
-					if(clapcount == 3)
-					{
-						motor[flipper] = -50;
-						wait10Msec(20);
-						motor[flipper]= 0;
-
-						if(clapcount == 4);
-						{
-							motor[flipper] = 50;
-							wait10Msec(20);
-							motor[flipper]= 0;
-
-
-
-
-
-						}
-					}
-				}
-			}
-		}
-	}
+}
+}
+}
 }

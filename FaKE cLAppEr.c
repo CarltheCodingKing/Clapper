@@ -5,18 +5,22 @@
 
 task main()
 {
+	while(true)
+	{
 
-			motor[flipper] = -60;
-			wait10Msec(30);
-			motor[flipper]= 0;
-			motor[flipper] = 60;
-			wait10Msec(30);
-			motor[flipper]= 0;
-			motor[flipper] = -60;
-			wait10Msec(30);
-			motor[flipper]= 0;
-			motor[flipper] = 60;
-			wait10Msec(30);
-			motor[flipper]= 0;
+		motor[flipper] = -60;
+		wait10Msec(35);
 
-		}
+		motor[flipper]= 0;
+		motor[flipper] = 60;
+		wait10Msec(35);
+		motor[flipper]= 0;
+		motor[flipper] = -60;
+		wait10Msec(35);
+		motor[flipper]= 0;
+		motor[flipper] = 60;
+		wait10Msec(35
+		);
+		motor[flipper]= 0;
+	}
+}
