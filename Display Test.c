@@ -21,7 +21,7 @@ task main()
 			if(clapcount == 2 || clapcount == 4 || clapcount == 4 || clapcount == 6 || clapcount == 8 || clapcount == 10 )
 			{
 				motor[flipper] = -50;
-				wait10Msec(41.4);
+				wait10Msec(40.7);
 				motor[flipper]= 0;
 
 			if(clapcount == 10)
