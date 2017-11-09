@@ -17,11 +17,11 @@ task main()
 			// || means "or"
 			// 156 wait is 2 rotations
 			// 75 works for one rotation
-			// 41.5 for half rotation
+			// 41 for half rotation
 			if(clapcount == 2 || clapcount == 4 || clapcount == 4 || clapcount == 6 || clapcount == 8 || clapcount == 10 )
 			{
 				motor[flipper] = -50;
-				wait10Msec(40.7);
+				wait10Msec(41);
 				motor[flipper]= 0;
 
 			if(clapcount == 10)
