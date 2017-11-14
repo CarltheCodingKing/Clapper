@@ -5,12 +5,12 @@
 task main()
 {
 	int clapcount = 0;
-
 	while(true)
 	{
 		if(SensorValue(sound) >= 80)
 		{
-			clapcount= clapcount + 1;
+			clapcount= clapcount + 1 time1[T1];
+			wait1Msec(10);
 			displayTextLine(4,"clapcount: %d", clapcount);
 			wait10Msec(30);
 
@@ -24,10 +24,10 @@ task main()
 				wait10Msec(41);
 				motor[flipper]= 0;
 
-			if(clapcount == 10)
-				clapcount= 0;
+				if(clapcount == 10)
+					clapcount= 0;
 
-}
-}
-}
+			}
+		}
+	}
 }
